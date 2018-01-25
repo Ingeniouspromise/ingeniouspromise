@@ -1,0 +1,4 @@
+Manual installation
+Install Python Script plugin (available in Plugin Manager).
+Download EmmetNPP plugin and unpack it into C:\Program Files\Notepad++\plugins folder
+Start Nodepad++. You should see Plugins > Emmet menu item.

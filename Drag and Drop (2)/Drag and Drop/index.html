@@ -1,0 +1,64 @@
+<!DOCTYPE HTML 5>
+<html>
+<head>
+    <script type="text/javascript" src="drag.js"></script>
+<style>
+    
+   #nav{
+        position: absolute;
+       top: 80px;
+      left: 50%;
+        margin-left: -120px;
+       border: 3px solid black;
+       border-top: 20px solid black;
+       width: 200px;
+       height: 200px;
+       align-content: center;
+       padding: 5px;
+        cursor: move;       
+      }
+    
+    #nav img{
+        margin-bottom: 0;
+        margin-right: 0;
+        
+    }
+    
+    #demobox{
+        position: absolute;
+       top: 0;
+        left: 50%;
+        margin-left: -250px;
+        background: linear-gradient(#ffffff, #e8e2e2);
+        border-radius: 3px;
+        padding: 3px;
+        padding-bottom: 20px;
+        width: 470px;
+        height: 40px;
+        text-align: center;
+        font-family:calibri;
+        font-weight: bold;
+        color: #951b05;
+        font-size: 20px;
+        box-shadow: 0px 2px 7px 2px gray;
+        
+        
+    }
+    </style>
+    
+</head>
+<body>
+    
+<div id="nav">
+
+<img src="logo.png" draggable="false" contenteditable="false" height="200px" width="200px">
+</div>
+   
+    <div id="demobox">
+<p id="demo"></p>
+    </div>
+</body>
+
+
+
+</html>

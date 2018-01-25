@@ -1,0 +1,104 @@
+<!doctype>
+<html>
+
+<head>
+<script type="text/javascript">
+function calc(){
+	//first get the year input
+var birthYear = document.getElementById("yearofBirth");
+
+var name = document.getElementById("name");
+//get the date
+var dateCheck = new Date;
+
+//get the year
+
+var date = dateCheck.getFullYear();
+
+
+//store the calculation in a variable (answer)
+
+var answer = date - birthYear.value;
+
+//output your answer
+
+alert ("Hi " + name.value + " you are " + answer + " years old");
+
+}
+
+
+</script>
+
+<style>
+
+h3{
+	margin:0;
+	margin-bottom: 3px;
+	color:#018FBE;
+	text-transform: uppercase;
+	font-family: tahoma;
+
+}
+
+div{
+	text-align: center;
+	
+}
+
+input {
+		border: 3px solid #0080FF;
+		border-radius: 3px;
+		width: 200px;
+		height: 50px;
+		padding:5px;
+		font-family:tahoma;
+		font-size:18px
+	}
+	
+	input:focus{
+	border: 3px solid red;
+	
+	}
+
+	button{
+		border: 2px solid #0080FF;
+		background-color: white;
+		width: 100px;
+		height: 30px;
+		padding: 5px;
+		border-radius: 4px;
+		color: #0080FF;
+		
+	}
+
+	button:hover{
+		border: 2px solid #0080FF;
+		background-color: #0080FF;
+		
+		color: white;
+		
+	}
+</style>
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<div>
+
+<h3>Enter your Name</h3>
+<input type="text" id="name">
+<br>
+<br>
+<h3>Enter your Year of Birth</h3>
+<input type="text" id="yearofBirth">
+
+<br>
+<br>
+<button onclick="calc()">Calculate Age</button>
+
+</div>
+</body>
+
+</html>
